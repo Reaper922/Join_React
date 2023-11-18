@@ -1,0 +1,42 @@
+@import "@src/variables.scss";
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/open_sans/OpenSans-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/open_sans/OpenSans-Medium.ttf");
+  font-style: medium;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/open_sans/OpenSans-Bold.ttf");
+  font-style: bold;
+  font-weight: 700;
+}
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Gill Sans", "Gill Sans MT", "Calibri",
+    "Trebuchet MS", "sans-serif";
+  color: $text-color;
+  font-weight: 400;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
