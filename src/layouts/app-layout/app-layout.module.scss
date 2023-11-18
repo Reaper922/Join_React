@@ -1,0 +1,9 @@
+main {
+  padding: 40px 64px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100%;
+}
