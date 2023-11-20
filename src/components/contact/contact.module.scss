@@ -1,0 +1,59 @@
+@import "@src/variables.scss";
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 24px;
+  border-radius: $border-radius-sm;
+  cursor: pointer;
+
+  &:hover {
+    background: $hover-color;
+
+    .details {
+      color: $text-color;
+
+      div:last-child {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-shadow: $box-shadow-sm;
+  color: white;
+  font-size: 12px;
+  background: orange;
+}
+
+.details {
+  div {
+    &:first-child {
+      font-weight: 700;
+    }
+
+    &:last-child {
+      color: $primary-color;
+      font-size: 12px;
+    }
+  }
+}
+
+.active {
+  color: white;
+  background: $primary-color;
+
+  div:last-child {
+    color: white;
+  }
+}
