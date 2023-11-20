@@ -5,6 +5,7 @@ import AppLayout from "../layouts/app-layout/app-layout.component";
 import Board from "../pages/board/board.component";
 import Contacts from "../pages/contacts/contacts.component";
 import Error from "../pages/error/error.component";
+import Help from "../pages/help/help.component";
 import LegalNotice from "../pages/legal-notice/legal-notice.component";
 import PrivacyPolicy from "../pages/privacy-policy/privacy-policy.component";
 import Summary from "../pages/summary/summary.component";
@@ -34,6 +35,10 @@ const appRoutes = [
       {
         path: "/contacts",
         element: <Contacts />,
+      },
+      {
+        path: "/help",
+        element: <Help />,
       },
       {
         path: "/privacy-policy",
