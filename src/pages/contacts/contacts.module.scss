@@ -1,0 +1,23 @@
+@import "@src/variables.scss";
+
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: calc(100dvh - $header-height);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 320px;
+  height: 100%;
+  padding: 32px 16px;
+  box-shadow: $box-shadow-sm;
+  overflow-y: auto;
+  user-select: none;
+}
+
+.details {
+  padding: 72px 64px;
+}
