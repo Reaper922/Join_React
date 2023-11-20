@@ -1,9 +1,15 @@
+$header-height: 64px;
+
 // Colors
 $primary-color: #4589ff;
 $secondary-color: #005dff;
 $active-color: #091931;
-$text-color: #42526e;
+$text-color: #425270;
 $hover-color: #d2e3ff;
+$scrollbar-color: #9099a580;
 
 //
 $border-radius-sm: 8px;
+$box-shadow-sm: 0px 4px 4px 0px rgba(0, 0, 0, 0.16);
+$box-shadow-md: 4px 0px 6px 0px rgba(0, 0, 0, 0.08);
+$box-shadow-lg: 0px 0px 10px 3px rgba(0, 0, 0, 0.08);
