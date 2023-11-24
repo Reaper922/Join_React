@@ -1,5 +1,5 @@
 import { SetStateAction } from "react";
-import styles from "./contact.module.scss";
+import styles from "./contact-entry.module.scss";
 
 type ContactProps = {
   contact: {
@@ -12,7 +12,7 @@ type ContactProps = {
   setContact: React.Dispatch<SetStateAction<number | null>>;
 };
 
-const Contact = ({ contact, activeContact, setContact }: ContactProps) => {
+const ContactEntry = ({ contact, activeContact, setContact }: ContactProps) => {
   const { id, firstname, lastname, email } = contact;
   const initials = (firstname.charAt(0) + lastname.charAt(0)).toUpperCase();
 
@@ -37,4 +37,4 @@ const Contact = ({ contact, activeContact, setContact }: ContactProps) => {
   );
 };
 
-export default Contact;
+export default ContactEntry;
