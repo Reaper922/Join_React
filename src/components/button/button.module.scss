@@ -1,0 +1,39 @@
+@import "@src/variables.scss";
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 8px;
+  border-radius: $border-radius-sm;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.24s ease-in-out;
+  cursor: pointer;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+}
+
+.primary {
+  color: white;
+  background: $primary-color;
+
+  &:hover {
+    box-shadow: $box-shadow-sm;
+    color: white;
+    background: $secondary-color;
+  }
+
+  &:active {
+    box-shadow: $box-shadow-sm;
+    color: $primary-color;
+    background: white;
+    transition: all 0s;
+  }
+}
