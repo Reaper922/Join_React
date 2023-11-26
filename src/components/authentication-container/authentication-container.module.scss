@@ -1,0 +1,8 @@
+@import "@src/variables.scss";
+
+.authContainer {
+  width: max-content;
+  padding: 40px 80px;
+  border-radius: 30px;
+  box-shadow: $box-shadow-lg;
+}
