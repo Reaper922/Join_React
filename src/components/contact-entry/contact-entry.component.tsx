@@ -1,4 +1,7 @@
 import { SetStateAction } from "react";
+
+import { getInitials } from "../../utils/person.utils";
+
 import styles from "./contact-entry.module.scss";
 
 type ContactProps = {
@@ -14,7 +17,6 @@ type ContactProps = {
 
 const ContactEntry = ({ contact, activeContact, setContact }: ContactProps) => {
   const { id, firstname, lastname, email } = contact;
-  const initials = (firstname.charAt(0) + lastname.charAt(0)).toUpperCase();
 
   return (
     <div
@@ -25,7 +27,7 @@ const ContactEntry = ({ contact, activeContact, setContact }: ContactProps) => {
       onClick={() => setContact(id)}
     >
       <div className={styles.bubble}>
-        <span>{initials}</span>
+        <span>{getInitials(firstname, lastname)}</span>
       </div>
       <div className={styles.details}>
         <div>

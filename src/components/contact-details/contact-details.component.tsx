@@ -3,6 +3,8 @@ import { Contact } from "../../types/contact.type";
 import EditIcon from "@assets/icons/edit.svg?react";
 import DeleteIcon from "@assets/icons/delete.svg?react";
 
+import { getInitials } from "../../utils/person.utils";
+
 import styles from "./contact-details.module.scss";
 
 type ContactDetailsProps = {
@@ -11,13 +13,12 @@ type ContactDetailsProps = {
 
 const ContactDetails = ({ displayedContact }: ContactDetailsProps) => {
   const { firstname, lastname, email, phone } = displayedContact;
-  const initials = (firstname.charAt(0) + lastname.charAt(0)).toUpperCase();
 
   return (
     <div className={styles.container}>
       <div className={styles.detailsHeader}>
         <div className={styles.bubble}>
-          <span>{initials}</span>
+          <span>{getInitials(firstname, lastname)}</span>
         </div>
         <div>
           <h2>
