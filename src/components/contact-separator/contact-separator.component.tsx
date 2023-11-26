@@ -7,7 +7,9 @@ type ContactSeparatorProps = {
 const ContactSeparator = ({ letter }: ContactSeparatorProps) => {
   return (
     <div className={styles.separator}>
-      <span>{letter}</span>
+      <span>
+        <b>{letter}</b>
+      </span>
     </div>
   );
 };
