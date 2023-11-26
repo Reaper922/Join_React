@@ -1,9 +1,12 @@
 @import "@src/variables.scss";
 
 .sidenav {
+  position: relative;
   width: 232px;
   padding: 24px 16px;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.16);
+  background: white;
+  box-shadow: $box-shadow-sm;
+  z-index: 4;
 }
 
 .navigation {

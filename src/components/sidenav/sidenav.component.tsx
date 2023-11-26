@@ -1,4 +1,10 @@
+import { useLocation } from "react-router-dom";
 import NavLink from "../nav-link/nav-link.component";
+
+import SummaryIcon from "@assets/icons/summary.svg?react";
+import BoardIcon from "@assets/icons/board.svg?react";
+import TaskIcon from "@assets/icons/task.svg?react";
+import ContactsIcon from "@assets/icons/contacts.svg?react";
 
 import styles from "./sidenav.module.scss";
 
@@ -6,44 +12,48 @@ const navigationLinks = [
   {
     name: "Summary",
     path: "/summary",
-    icon: "./src/assets/icons/summary.svg",
+    icon: <SummaryIcon />,
   },
   {
     name: "Board",
     path: "/board",
-    icon: "./src/assets/icons/board.svg",
+    icon: <BoardIcon />,
   },
   {
     name: "Add Task",
     path: "/task",
-    icon: "./src/assets/icons/task.svg",
+    icon: <TaskIcon />,
   },
   {
     name: "Contacts",
     path: "/contacts",
-    icon: "./src/assets/icons/contacts.svg",
+    icon: <ContactsIcon />,
   },
   {
     name: "Privacy Policy",
     path: "/privacy-policy",
-    // icon: "./src/assets/icons/info.svg",
   },
   {
     name: "Legal Notice",
     path: "/legal-notice",
-    // icon: "./src/assets/icons/info.svg",
   },
 ];
 
 const Sidenav = () => {
+  const location = useLocation();
+
   return (
     <section className={styles.sidenav}>
       <nav className={styles.navigation}>
         <ul>
           {navigationLinks.map(({ name, path, icon }) => {
+            const isActive = path === location.pathname;
+
             return (
               <li key={name}>
-                <NavLink name={name} path={path} icon={icon} />
+                <NavLink name={name} path={path} active={isActive}>
+                  {icon}
+                </NavLink>
               </li>
             );
           })}
