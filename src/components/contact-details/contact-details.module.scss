@@ -1,0 +1,71 @@
+@import "@src/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  user-select: none;
+}
+
+.detailsHeader {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  h2 {
+    user-select: text;
+  }
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-shadow: $box-shadow-sm;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  background: orange;
+}
+
+.actionContainer {
+  display: flex;
+  gap: 16px;
+  margin-top: 6px;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  a {
+    width: fit-content;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  user-select: text;
+
+  span {
+    user-select: none;
+  }
+}
