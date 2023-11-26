@@ -19,3 +19,13 @@
     height: 24px;
   }
 }
+
+.active {
+  background: $hover-color;
+}
+
+.svg {
+  path {
+    fill: $text-color;
+  }
+}
