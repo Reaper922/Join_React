@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding: 12px 8px;
+  padding: 8px 12px;
   border-radius: $border-radius-sm;
   border: none;
   font-size: 16px;
@@ -34,6 +34,25 @@
     box-shadow: $box-shadow-sm;
     color: $primary-color;
     background: white;
+    transition: all 0s;
+  }
+}
+
+.secondary {
+  border: 2px solid $text-color;
+  color: $text-color;
+  background: white;
+
+  &:hover {
+    box-shadow: $box-shadow-sm;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+  }
+
+  &:active {
+    box-shadow: $box-shadow-sm;
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
     transition: all 0s;
   }
 }
