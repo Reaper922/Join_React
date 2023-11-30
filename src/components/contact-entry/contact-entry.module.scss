@@ -13,10 +13,6 @@
 
     .details {
       color: $text-color;
-
-      div:last-child {
-        color: $text-color;
-      }
     }
   }
 }
@@ -49,7 +45,8 @@
   }
 }
 
-.active {
+.active,
+.active:hover {
   color: white;
   background: $primary-color;
 
