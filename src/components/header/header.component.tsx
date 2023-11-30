@@ -15,7 +15,9 @@ const Header = () => {
         <Link to={"/help"} draggable="false">
           <img src={helpIcon} alt="Help" draggable="false" />
         </Link>
-        <ProfileIcon />
+        <Link to={"/"} draggable="false">
+          <ProfileIcon />
+        </Link>
       </div>
     </header>
   );
